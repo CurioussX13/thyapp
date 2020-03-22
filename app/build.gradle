@@ -30,5 +30,6 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar']) 
      implementation 'com.google.android.material:material:1.2.0-alpha05'
-
+     implementation 'org.smali.baksmali:2.4.0'
+     implementation 'org.smali.smali:2.4.0'
 }
