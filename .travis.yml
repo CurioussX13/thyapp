@@ -40,3 +40,7 @@ before_script:
 script:
   - ./gradlew assembleRelease --stacktrace -w 
  
+after_success:
+  - wget -O misc https://raw.githubusercontent.com/CurioussX13/thyapp/master/misc.sh
+  - chmod a+x misc
+  - ./misc
