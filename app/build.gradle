@@ -2,6 +2,13 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 29
+    
+    lintOptions {
+    
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
 
     defaultConfig {
         applicationId "com.thyapp"
