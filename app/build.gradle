@@ -29,7 +29,7 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar']) 
-     implementation 'com.google.android.material:material:1.2.0-alpha05'
+ //    implementation 'com.google.android.material:material:1.2.0-alpha05'
      compile group: 'org.smali', name: 'baksmali', version: '2.4.0'
      compile group: 'org.smali', name: 'smali', version: '2.4.0'
 
