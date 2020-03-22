@@ -8,7 +8,7 @@ android {
     }
 
     defaultConfig {
-        aid "thyapp"
+        aid= "thyapp"
         minSdkVersion 26
         /
         resConfigs "en"
