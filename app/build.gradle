@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+
+    lintOptions {
+        abortOnError false
+    }
+
+    defaultConfig {
+        aid "thyapp"
+        minSdkVersion 26
+        /
+        resConfigs "en"
+        targetSdkVersion 29
+        
+        project.ext.set("archivesBaseName","com"+"aid")
+    }
+
+    buildTypes {
+        release {
+            zipAlignEnabled true
+            minifyEnabled false
+            shrinkResources false
+            
+        }
+        debug {
+            zipAlignEnabled true
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+}
+
+dependencies {
+    
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+}
