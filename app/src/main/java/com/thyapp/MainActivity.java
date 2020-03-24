@@ -7,7 +7,7 @@ import de.robv.android.xposed.IXposedHookLoadPackage;
 import de.robv.android.xposed.XC_MethodHook;
 import de.robv.android.xposed.callbacks.XC_LoadPackage.LoadPackageParam;
 
-public class Tutorial implements IXposedHookLoadPackage {
+public class MainActivity implements IXposedHookLoadPackage {
 	public void handleLoadPackage(final LoadPackageParam lpparam) throws Throwable {
 		if (!lpparam.packageName.equals("com.android.systemui"))
 			return;
